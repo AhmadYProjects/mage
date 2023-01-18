@@ -27,6 +27,7 @@ public final class PhyrexiaAllWillBeOne extends ExpansionSet {
         cards.add(new SetCardInfo("Bloated Contaminator", 159, Rarity.RARE, mage.cards.b.BloatedContaminator.class));
         cards.add(new SetCardInfo("Blue Sun's Twilight", 43, Rarity.RARE, mage.cards.b.BlueSunsTwilight.class));
         cards.add(new SetCardInfo("Copperline Gorge", 249, Rarity.RARE, mage.cards.c.CopperlineGorge.class));
+        cards.add(new SetCardInfo("Darkslick Shores", 372, Rarity.RARE, mage.cards.d.DarkslickShores.class));
         cards.add(new SetCardInfo("Dragonwing Glider", 126, Rarity.RARE, mage.cards.d.DragonwingGlider.class));
         cards.add(new SetCardInfo("Elesh Norn, Mother of Machines", 10, Rarity.MYTHIC, mage.cards.e.EleshNornMotherOfMachines.class));
         cards.add(new SetCardInfo("Evolved Spinoderm", 166, Rarity.RARE, mage.cards.e.EvolvedSpinoderm.class));
@@ -35,14 +36,16 @@ public final class PhyrexiaAllWillBeOne extends ExpansionSet {
         cards.add(new SetCardInfo("Graaz, Unstoppable Juggernaut", 225, Rarity.RARE, mage.cards.g.GraazUnstoppableJuggernaut.class));
         cards.add(new SetCardInfo("Island", 273, Rarity.LAND, mage.cards.basiclands.Island.class, NON_FULL_USE_VARIOUS));
         cards.add(new SetCardInfo("Jor Kadeen, First Goldwarden", 203, Rarity.RARE, mage.cards.j.JorKadeenFirstGoldwarden.class));
-        cards.add(new SetCardInfo("Karumonix, the Rat King", 292, Rarity.RARE, mage.cards.k.KarumonixTheRatKing.class));
+        cards.add(new SetCardInfo("Karumonix, the Rat King", 98, Rarity.RARE, mage.cards.k.KarumonixTheRatKing.class));
         cards.add(new SetCardInfo("Kaya, Intangible Slayer", 205, Rarity.RARE, mage.cards.k.KayaIntangibleSlayer.class));
         cards.add(new SetCardInfo("Kemba, Kha Enduring", 19, Rarity.RARE, mage.cards.k.KembaKhaEnduring.class));
         cards.add(new SetCardInfo("Koth, Fire of Resistance", 138, Rarity.RARE, mage.cards.k.KothFireOfResistance.class));
         cards.add(new SetCardInfo("Mercurial Spelldancer", 61, Rarity.RARE, mage.cards.m.MercurialSpelldancer.class));
         cards.add(new SetCardInfo("Migloz, Maze Crusher", 210, Rarity.RARE, mage.cards.m.MiglozMazeCrusher.class));
         cards.add(new SetCardInfo("Mindsplice Apparatus", 63, Rarity.RARE, mage.cards.m.MindspliceApparatus.class));
+        cards.add(new SetCardInfo("Minor Misstep", 64, Rarity.UNCOMMON, mage.cards.m.MinorMisstep.class));
         cards.add(new SetCardInfo("Mirrex", 254, Rarity.RARE, mage.cards.m.Mirrex.class));
+        cards.add(new SetCardInfo("Mondrak, Glory Dominus", 23, Rarity.MYTHIC, mage.cards.m.MondrakGloryDominus.class));
         cards.add(new SetCardInfo("Monument to Perfection", 233, Rarity.RARE, mage.cards.m.MonumentToPerfection.class));
         cards.add(new SetCardInfo("Mountain", 275, Rarity.LAND, mage.cards.basiclands.Mountain.class, NON_FULL_USE_VARIOUS));
         cards.add(new SetCardInfo("Nissa, Ascended Animist", 175, Rarity.MYTHIC, mage.cards.n.NissaAscendedAnimist.class));
