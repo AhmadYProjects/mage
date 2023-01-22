@@ -4,17 +4,16 @@ import mage.ObjectColor;
 import mage.abilities.Ability;
 import mage.abilities.common.DealsDamageToAPlayerAttachedTriggeredAbility;
 import mage.abilities.common.SimpleStaticAbility;
+import mage.abilities.costs.mana.GenericManaCost;
 import mage.abilities.effects.common.ExileTopXMayPlayUntilEndOfTurnEffect;
 import mage.abilities.effects.common.continuous.BoostEquippedEffect;
 import mage.abilities.effects.common.continuous.GainAbilityAttachedEffect;
 import mage.abilities.effects.common.continuous.PlayAdditionalLandsControllerEffect;
+import mage.abilities.keyword.EquipAbility;
 import mage.abilities.keyword.ProtectionAbility;
 import mage.cards.CardImpl;
 import mage.cards.CardSetInfo;
-import mage.constants.AttachmentType;
-import mage.constants.CardType;
-import mage.constants.Duration;
-import mage.constants.SubType;
+import mage.constants.*;
 
 import java.util.UUID;
 
@@ -41,6 +40,7 @@ public final class SwordOfForgeAndFrontier extends CardImpl {
         this.addAbility(ability2);
 
         // Equip {2}
+        this.addAbility(new EquipAbility(Outcome.Benefit,new GenericManaCost(2), false));
     }
 
     private SwordOfForgeAndFrontier(final SwordOfForgeAndFrontier card) {
