@@ -1,10 +1,22 @@
 package mage.cards.s;
 
-import java.util.UUID;
-import mage.constants.SubType;
+import mage.ObjectColor;
+import mage.abilities.Ability;
+import mage.abilities.common.DealsDamageToAPlayerAttachedTriggeredAbility;
+import mage.abilities.common.SimpleStaticAbility;
+import mage.abilities.effects.common.ExileTopXMayPlayUntilEndOfTurnEffect;
+import mage.abilities.effects.common.continuous.BoostEquippedEffect;
+import mage.abilities.effects.common.continuous.GainAbilityAttachedEffect;
+import mage.abilities.effects.common.continuous.PlayAdditionalLandsControllerEffect;
+import mage.abilities.keyword.ProtectionAbility;
 import mage.cards.CardImpl;
 import mage.cards.CardSetInfo;
+import mage.constants.AttachmentType;
 import mage.constants.CardType;
+import mage.constants.Duration;
+import mage.constants.SubType;
+
+import java.util.UUID;
 
 /**
  *
@@ -18,7 +30,16 @@ public final class SwordOfForgeAndFrontier extends CardImpl {
         this.subtype.add(SubType.EQUIPMENT);
 
         // Equipped creature gets +2/+2 and has protection from red and from green.
+        Ability ability = new SimpleStaticAbility(new BoostEquippedEffect(2,2));
+        ability.addEffect(new GainAbilityAttachedEffect(
+                ProtectionAbility.from(ObjectColor.GREEN,ObjectColor.RED), AttachmentType.EQUIPMENT).setText(
+                        "and has protection from red and from green"));
+        this.addAbility(ability);
         // Whenever equipped creature deals combat damage to a player, exile the top two cards of your library. You may play those cards this turn. You may play an additional land this turn.
+        Ability ability2 = new DealsDamageToAPlayerAttachedTriggeredAbility(new PlayAdditionalLandsControllerEffect(1, Duration.EndOfTurn),"equipped creature", false);
+        ability2.addEffect(new ExileTopXMayPlayUntilEndOfTurnEffect(2));
+        this.addAbility(ability2);
+
         // Equip {2}
     }
 
